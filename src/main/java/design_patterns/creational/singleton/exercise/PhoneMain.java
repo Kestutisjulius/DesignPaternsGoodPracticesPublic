@@ -4,6 +4,7 @@ public class PhoneMain {
     public static void main(String[] args) {
         PhoneProducer phoneProducer = PhoneProducer.getPhoneProducer();
 
+
         phoneProducer.producePhone(); //+1
         Phone iPhone = phoneProducer.producePhone(); //+1
         phoneProducer.showPhoneProducedCount();
