@@ -1,22 +1,12 @@
 package email_admin;
 
 public class EmailApp {
-    private String firstName;
-    private String lastName;
-    private String password;
-    private String department;
-    private int mailboxCapacity;
-    private String alternateEmail;
+    public static void main(String[] args) {
+        Email eml = new Email("Will", "Smith");
+        eml.setAlternateEmail("w.s@gmail.com");
+        System.out.println("Alternate email: " + eml.getAlternateEmail());
+        System.out.println("*********");
+        System.out.println(eml.showInfo());
 
-    //Constructor to receive the first name and last name
-
-    //Ask for the department
-
-    //Generate a random password
-
-    //Set the mailbox capacity
-
-    //Set the alternate email
-
-    //Change the password
+    }
 }
