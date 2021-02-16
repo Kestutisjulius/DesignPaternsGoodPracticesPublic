@@ -9,6 +9,20 @@ public class BuilderMain {
 
     //Let's say we are creating a game with robots.
 
+    public static void main(String[] args) {
+        RobotBuilder builder = new OldRobotBuilder(); //sukurem stakles robotui gaminti
+        RobotEngineer engineer = new RobotEngineer(builder);
+        System.out.println(engineer.getRobot());
+        engineer.constructRobot();
+
+        Robot pirmasisRobotas = engineer.getRobot();
+        System.out.println(pirmasisRobotas);
+
+        engineer = new RobotEngineer(new TeslaRobotBuilder());
+        engineer.constructRobot();
+
+    }
+
 
 
 }
